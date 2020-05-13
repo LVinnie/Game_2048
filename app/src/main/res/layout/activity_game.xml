@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8ee"
+    tools:context=".ui.activity.GameActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_yellow"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="2048"
+        android:textSize="36dp"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/score_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/title"
+        android:paddingTop="5dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:background="@drawable/bg_score">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/score"
+            android:textSize="16dp"
+            android:textColor="#ece2d6"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/restart"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/title"
+        android:layout_below="@id/score_layout"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="@string/restart"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button"/>
+
+    <LinearLayout
+        android:id="@+id/best_layout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/score_layout"
+        android:paddingTop="5dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:background="@drawable/bg_score">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/best"
+            android:textSize="16dp"
+            android:textColor="#ece2d6"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/best"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/about"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/score_layout"
+        android:layout_below="@id/best_layout"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="@string/about"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button"/>
+
+
+    <com.lvinnie.game_2048.widget.GameContainer
+        android:id="@+id/game_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:GC_Space="10dp"
+        app:GC_Size="330dp"
+        app:GC_CornerSize="6dp"/>
+
+</RelativeLayout>
+</layout>

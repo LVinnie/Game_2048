@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GameContainer">
+        <attr name="GC_Space" format="dimension" />
+        <attr name="GC_Size" format="dimension" />
+        <attr name="GC_CornerSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

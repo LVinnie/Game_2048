@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2048</string>
+    <string name="confirm">确定</string>
+    <string name="restart">重新开始</string>
+    <string name="about">关于</string>
+    <string name="tips">提示</string>
+    <string name="best">最高</string>
+    <string name="score">分数</string>
+    <string name="game_over">游戏结束！</string>
+    <string name="about_message">希望您喜欢这款游戏！</string>
+    <string name="thanks">谢谢！</string>
+    <string name="ask_restart">确定重新开始吗？</string>
+</resources>

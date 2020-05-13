@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">2048</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="restart">RESTART</string>
+    <string name="about">ABOUT</string>
+    <string name="tips">TIPS!</string>
+    <string name="best">BEST</string>
+    <string name="score">SCORE</string>
+    <string name="game_over">GAME OVER!</string>
+    <string name="about_message">Wish You Like This Game!</string>
+    <string name="thanks">THANKS!</string>
+    <string name="ask_restart">Are You Sure To Start Over?</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dialog_title">#746d65</color>
+    <color name="dialog_message">#746d65</color>
+    <color name="dialog_bg">#f8f8ee</color>
+
+    <color name="bg_game_container">#b7ada1</color>
+    <color name="bg_button">#e19b67</color>
+
+    <color name="bg_number_empty">#cac0b6</color>
+
+    <color name="bg_number_2">#ece3da</color>
+    <color name="bg_number_4">#eadfc9</color>
+    <color name="bg_number_8">#e8b381</color>
+    <color name="bg_number_16">#df9160</color>
+    <color name="bg_number_32">#e68366</color>
+    <color name="bg_number_64">#d96242</color>
+    <color name="bg_number_128">#e6c542</color>
+    <color name="bg_number_256">#e8b381</color>
+    <color name="bg_number_512">#df9160</color>
+    <color name="bg_number_1024">#e68366</color>
+    <color name="bg_number_2048">#d96242</color>
+    <color name="bg_number_4096">#e6c542</color>
+
+    <color name="text_number_2">#736c64</color>
+    <color name="text_number_4">#756e68</color>
+    <color name="text_number_8">#ffffff</color>
+    <color name="text_number_16">#ffffff</color>
+    <color name="text_number_32">#ffffff</color>
+    <color name="text_number_64">#ffffff</color>
+    <color name="text_number_128">#ffffff</color>
+    <color name="text_number_256">#ffffff</color>
+    <color name="text_number_512">#ffffff</color>
+    <color name="text_number_1024">#ffffff</color>
+    <color name="text_number_2048">#ffffff</color>
+    <color name="text_number_4096">#ffffff</color>
+
+</resources>
