@@ -9,7 +9,6 @@ import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.animation.Animation
-import android.view.animation.AnimationSet
 import android.view.animation.ScaleAnimation
 import android.widget.FrameLayout
 import androidx.appcompat.widget.AppCompatTextView
@@ -92,7 +91,7 @@ class GameContainer : FrameLayout {
         moveSpaceMax = AutoSizeUtils.dp2px(context, 20f)
 
         scaleInAnimation = ScaleAnimation(0f, 1f, 0f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f)
-        scaleInAnimation.duration = 150
+        scaleInAnimation.duration = ANIMATION_DURATION
 
         isFocusable = true
         isClickable = true
@@ -124,7 +123,6 @@ class GameContainer : FrameLayout {
             locations.add(locationItem)
         }
 
-
         dialogRestart = GameDialog(context)
         dialogRestart.onConfirmListener = object : GameDialog.OnConfirmListener {
             override fun onConfirm() {
@@ -135,7 +133,6 @@ class GameContainer : FrameLayout {
         dialogRestart.confirm = context.resources.getString(R.string.confirm)
 
         dialogGameOver = GameDialog(context)
-        dialogGameOver.setCancelable(false)
         dialogGameOver.onConfirmListener = object : GameDialog.OnConfirmListener {
             override fun onConfirm() {
                 restart()
@@ -536,10 +533,6 @@ class GameContainer : FrameLayout {
         if (GameHelper.setNewScore(score)) {
             bestView?.text = score.toString()
         }
-    }
-
-    private fun gameOver() {
-        dialogGameOver.show()
     }
 
     fun about() {

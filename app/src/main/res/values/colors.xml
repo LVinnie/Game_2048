@@ -17,10 +17,10 @@
     <color name="bg_number_32">#e68366</color>
     <color name="bg_number_64">#d96242</color>
     <color name="bg_number_128">#e6c542</color>
-    <color name="bg_number_256">#e8b381</color>
-    <color name="bg_number_512">#df9160</color>
-    <color name="bg_number_1024">#e68366</color>
-    <color name="bg_number_2048">#d96242</color>
+    <color name="bg_number_256">#df9160</color>
+    <color name="bg_number_512">#e68366</color>
+    <color name="bg_number_1024">#d96242</color>
+    <color name="bg_number_2048">#e6c542</color>
     <color name="bg_number_4096">#e6c542</color>
 
     <color name="text_number_2">#736c64</color>
